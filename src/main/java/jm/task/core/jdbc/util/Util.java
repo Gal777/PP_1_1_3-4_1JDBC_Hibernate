@@ -18,6 +18,7 @@ public class Util {
     private static String user = "root";
     private static String password = "%murzilka@1976!";
 
+    public static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
         SessionFactory sessionFactory = null;
@@ -39,9 +40,10 @@ public class Util {
     }
 
 
+
+
     public static Connection getConnection() {
         Connection connection = null;
-
         try {
             connection = DriverManager.getConnection(url, user, password);
             System.out.println("соединение установлено");

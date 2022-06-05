@@ -66,6 +66,7 @@ public class UserDaoHibernateImpl implements UserDao {
         }
     }
 
+
     @Override
     public void removeUserById(int id) {
     try {
