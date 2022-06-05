@@ -13,6 +13,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+
 public class Util {
     private static String url = "jdbc:mysql://localhost:3306/users";
     private static String user = "root";
