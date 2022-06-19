@@ -14,12 +14,13 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 
+
 public class Util {
     private static String url = "jdbc:mysql://localhost:3306/users";
     private static String user = "root";
     private static String password = "%murzilka@1976!";
 
-    public static SessionFactory sessionFactory;
+    private static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
         SessionFactory sessionFactory = null;
@@ -52,7 +53,6 @@ public class Util {
             System.out.println("Соединение не установлено!");
         }
         return connection;
-
     }
 
 }
